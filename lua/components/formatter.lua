@@ -9,7 +9,7 @@ require("conform").setup {
     typescriptreact = { "prettier" },
     htmldjango = { "prettier" },
     rust = { "rustfmt" },
-    ["*"] = { "trim_whitespace", "codespell" },
+    ["*"] = { "trim_whitespace" },
   },
   format_on_save = {
     lsp_fallback = true,
