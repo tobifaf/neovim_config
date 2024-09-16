@@ -61,6 +61,18 @@ require("lazy").setup {
     build = "cd app && yarn install",
   },
   "lewis6991/gitsigns.nvim",
-  "folke/trouble.nvim",
+  {
+    "folke/trouble.nvim",
+    opts = {},
+    cmd = "Trouble",
+    keys = {
+      {
+        "<leader>x",
+        "<cmd>Trouble diagnostics toggle<cr>",
+        desc = "Diagnostics (Trouble)",
+      },
+    },
+  },
   { "windwp/nvim-autopairs", event = "InsertEnter", config = true },
+  "f-person/auto-dark-mode.nvim",
 }

@@ -4,7 +4,7 @@ require("mason-lspconfig").setup {
   ensure_installed = {
     "lua_ls",
     "pylsp",
-    "tsserver",
+    "ts_ls",
     "terraformls",
     "ansiblels",
     "rust_analyzer",
@@ -73,16 +73,20 @@ require("lspconfig").pylsp.setup {
   },
 }
 
-require("lspconfig").tsserver.setup {}
+require("lspconfig").ts_ls.setup {
+  capabilities = capabilities,
+}
 
-require("lspconfig").terraformls.setup {}
+require("lspconfig").terraformls.setup {
+  capabilities = capabilities,
+}
 
-require("lspconfig").ansiblels.setup {}
+require("lspconfig").ansiblels.setup {
+  capabilities = capabilities,
+}
 
 require("lspconfig").rust_analyzer.setup {
-  settings = {
-    ["rust-analyzer"] = {},
-  },
+  capabilities = capabilities,
 }
 
 require("sonarlint").setup {

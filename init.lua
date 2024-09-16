@@ -19,6 +19,9 @@ vim.g.maplocalleader = ","
 vim.o.number = true
 vim.o.relativenumber = true
 
+-- highlight cursor line
+vim.o.cursorline = true
+
 -- seach case-insensitive if only lowercase
 vim.o.ignorecase = true
 vim.o.smartcase = true
@@ -27,10 +30,6 @@ vim.o.smartcase = true
 vim.opt.clipboard = "unnamed,unnamedplus"
 
 require "components/lazy"
-
--- theme
-vim.cmd [[colorscheme catppuccin-macchiato]]
-
 require "components/mason"
 require "components/nvim-cmp"
 require "components/luasnip"
@@ -44,8 +43,8 @@ require "components/comment"
 require "components/lualine"
 require "components/bufferline"
 require "components/gitsigns"
-require "components/trouble"
 require "components/autopairs"
+require "components/auto-dark-mode"
 
 -- navigate splits and buffers
 vim.keymap.set("n", "<leader>3", ":bp<cr>")
