@@ -63,3 +63,13 @@ vim.api.nvim_create_autocmd("TextYankPost", {
     vim.highlight.on_yank { higroup = "IncSearch", timeout = 500 }
   end,
 })
+
+-- hard mode ;)
+vim.keymap.set("n", "<Left>", ":echo 'NOPE'<CR>")
+vim.keymap.set("n", "<Right>", ":echo 'NOPE'<CR>")
+vim.keymap.set("n", "<Up>", ":echo 'NOPE'<CR>")
+vim.keymap.set("n", "<Down>", ":echo 'NOPE'<CR>")
+vim.keymap.set("i", "<Left>", "<Esc>")
+vim.keymap.set("i", "<Right>", "<Esc>")
+vim.keymap.set("i", "<Up>", "<Esc>")
+vim.keymap.set("i", "<Down>", "<Esc>")
