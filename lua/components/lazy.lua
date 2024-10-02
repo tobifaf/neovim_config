@@ -90,4 +90,5 @@ require("lazy").setup {
       },
     },
   },
+  "lukas-reineke/indent-blankline.nvim",
 }

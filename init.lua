@@ -45,6 +45,7 @@ require "components/bufferline"
 require "components/gitsigns"
 require "components/autopairs"
 require "components/auto-dark-mode"
+require "components/indent-blankline"
 
 -- navigate splits and buffers
 vim.keymap.set("n", "<leader>3", ":bp<cr>")
