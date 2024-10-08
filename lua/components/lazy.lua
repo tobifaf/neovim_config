@@ -75,20 +75,5 @@ require("lazy").setup {
   },
   { "windwp/nvim-autopairs", event = "InsertEnter", config = true },
   "f-person/auto-dark-mode.nvim",
-  {
-    "folke/flash.nvim",
-    event = "VeryLazy",
-    opts = {},
-    keys = {
-      {
-        "s",
-        mode = { "n", "x", "o" },
-        function()
-          require("flash").jump()
-        end,
-        desc = "Flash",
-      },
-    },
-  },
   "lukas-reineke/indent-blankline.nvim",
 }

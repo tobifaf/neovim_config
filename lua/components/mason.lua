@@ -8,6 +8,7 @@ require("mason-lspconfig").setup {
     "terraformls",
     "ansiblels",
     "rust_analyzer",
+    "gopls",
   },
 }
 
@@ -86,6 +87,10 @@ require("lspconfig").ansiblels.setup {
 }
 
 require("lspconfig").rust_analyzer.setup {
+  capabilities = capabilities,
+}
+
+require("lspconfig").gopls.setup {
   capabilities = capabilities,
 }
 
