@@ -8,7 +8,7 @@ require("conform").setup {
     javascriptreact = { "prettier" },
     typescriptreact = { "prettier" },
     htmldjango = { "prettier" },
-    rust = { "rustfmt" },
+    -- rust = { "rustfmt" },
     ["*"] = { "trim_whitespace" },
   },
   format_on_save = {

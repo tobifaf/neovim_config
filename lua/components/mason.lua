@@ -7,8 +7,8 @@ require("mason-lspconfig").setup {
     "ts_ls",
     "terraformls",
     "ansiblels",
-    "rust_analyzer",
-    "gopls",
+    -- "rust_analyzer",
+    -- "gopls",
   },
 }
 
@@ -86,13 +86,13 @@ require("lspconfig").ansiblels.setup {
   capabilities = capabilities,
 }
 
-require("lspconfig").rust_analyzer.setup {
-  capabilities = capabilities,
-}
-
-require("lspconfig").gopls.setup {
-  capabilities = capabilities,
-}
+-- require("lspconfig").rust_analyzer.setup {
+--   capabilities = capabilities,
+-- }
+--
+-- require("lspconfig").gopls.setup {
+--   capabilities = capabilities,
+-- }
 
 require("sonarlint").setup {
   server = {
